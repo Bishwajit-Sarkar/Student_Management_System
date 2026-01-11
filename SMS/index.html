@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Management System</h2>
+
+    <form id="studentForm">
+        <input type="hidden" id="studentIndex">
+
+        <label>Name</label>
+        <input type="text" id="name" required placeholder="Name">
+
+        <label>Age</label>
+        <input type="number" id="age" required placeholder="Age">
+
+        <label>Grade</label>
+        <input type="text" id="grade" required placeholder="Grade">
+
+        <button type="submit">Save Student</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable">
+            
+        </tbody>
+    </table>
+</div>
+
+
+
+<p id="error" class="error"></p>
+
+
+<script src="script.js"></script>
+</body>
+</html>
